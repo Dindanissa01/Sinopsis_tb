@@ -1,27 +1,38 @@
 class User {
   final int id;
   final String name;
-  final String userName;
+  final String username;
   final String email;
-  final String? profileImage;
+  final String? profilePhoto;
   final String? phoneNumber;
 
   User({
     required this.id,
     required this.name,
-    required this.userName,
+    required this.username,
     required this.email,
-    this.profileImage,
+    this.profilePhoto,
     this.phoneNumber,
   });
+
+  factory User.fromMap(Map<String, dynamic> map) {
+    return User(
+      id: map["id"],
+      name: map["name"],
+      username: map["username"],
+      email: map["email"],
+      profilePhoto: map["profile_photo"],
+      phoneNumber: map["phone_number"],
+    );
+  }
 
   factory User.dummy() {
     return User(
       id: 001,
       name: "Dinda",
-      userName: "Available",
+      username: "Available",
       email: "dindanissa9@gmail.com",
-      profileImage: "asset/lisa.jpg",
+      profilePhoto: "asset/lisa.jpg",
       phoneNumber: "082130190205",
     );
   }

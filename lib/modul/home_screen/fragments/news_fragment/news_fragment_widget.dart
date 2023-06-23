@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
-import '../models/news.dart';
+import 'package:navigator_apps/models/news.dart';
 
 // ignore: must_be_immutable
-class NewsItemWidget extends StatelessWidget {
-  NewsItemWidget({
+class NewsFragmentWidget extends StatelessWidget {
+  NewsFragmentWidget({
     super.key,
     required this.news,
   });
@@ -29,10 +28,15 @@ class NewsItemWidget extends StatelessWidget {
           vertical: 10,
           horizontal: 5,
         ),
-        leading: Image.network(news.image!),
+        leading: AspectRatio(
+            aspectRatio: 16 / 9,
+            child: Image.network(
+              news.image!,
+              fit: BoxFit.cover,
+            )),
         title: Text(news.title!),
         subtitle: Text(
-          news.description!,
+          news.content!,
           maxLines: 3,
           overflow: TextOverflow.ellipsis,
         ),
