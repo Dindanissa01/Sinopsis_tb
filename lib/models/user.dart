@@ -32,7 +32,7 @@ class User {
       name: "Dinda",
       username: "Available",
       email: "dindanissa9@gmail.com",
-      profilePhoto: "asset/lisa.jpg",
+      profilePhoto: "assets/lisa.jpg",
       phoneNumber: "082130190205",
     );
   }

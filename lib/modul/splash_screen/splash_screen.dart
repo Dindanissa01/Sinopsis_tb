@@ -14,6 +14,8 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   late Size size;
   final User user = User.dummy();
+
+  String? get assets => null;
   @override
   void initState() {
     SystemChrome.setSystemUIOverlayStyle(
@@ -39,11 +41,12 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     size = MediaQuery.of(context).size;
+    // ignore: prefer_typing_uninitialized_variables
     return Scaffold(
       body: Center(
         child: Image.asset(
-          'asset/cinopsis.jpeg',
-          width: size.width * 0.4,
+          "assets/cinopsis.jpeg",
+          fit: BoxFit.cover,
         ),
       ),
     );

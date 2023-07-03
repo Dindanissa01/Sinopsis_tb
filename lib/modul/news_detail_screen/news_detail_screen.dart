@@ -24,7 +24,7 @@ class _NewsDetailScreenState extends State<NewsDetailScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red,
+        backgroundColor: const Color.fromARGB(255, 207, 182, 100),
         title: const Text(
           "Movies Detail",
         ),
@@ -83,7 +83,7 @@ class _NewsDetailScreenState extends State<NewsDetailScreen> {
                                 },
                                 icon: const Icon(
                                   Icons.favorite,
-                                  color: Colors.red,
+                                  color: Color.fromARGB(255, 207, 182, 100),
                                 ))
                           ],
                         ),

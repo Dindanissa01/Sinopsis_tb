@@ -280,7 +280,7 @@ class LatestNewsSection extends StatelessWidget {
                     .push(MaterialPageRoute(builder: (context) {
                   return Scaffold(
                     appBar: AppBar(
-                      backgroundColor: Colors.red,
+                      backgroundColor: const Color.fromARGB(255, 207, 182, 100),
                       title: const Text("News"),
                     ),
                     body: const NewsFragment(),

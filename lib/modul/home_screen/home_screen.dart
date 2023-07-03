@@ -78,14 +78,14 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           bottomMenuItem(
             "Film",
-            Icons.newspaper_rounded,
+            Icons.movie,
           ),
           bottomMenuItem(
             "Menu",
-            Icons.menu_rounded,
+            Icons.person,
           ),
         ],
-        selectedItemColor: Colors.red,
+        selectedItemColor: const Color.fromARGB(255, 207, 182, 100),
         unselectedItemColor: Colors.grey,
       ),
     );
@@ -96,7 +96,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Column(
         children: [
           Container(
-            color: Colors.red,
+            color: const Color.fromARGB(255, 207, 182, 100),
             child: Column(
               children: [
                 SizedBox(
@@ -201,7 +201,7 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),
-              color: Colors.red,
+              color: const Color.fromRGBO(255, 207, 182, 100),
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
