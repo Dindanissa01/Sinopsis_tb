@@ -45,8 +45,13 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       body: Center(
         child: Image.asset(
+<<<<<<< HEAD
           "assets/cinopsis.jpeg",
           fit: BoxFit.cover,
+=======
+          'assets/cinopsis.jpeg',
+          width: size.width * 0.4,
+>>>>>>> 34b945eeeecabed5aef7b55537eb93041fc92229
         ),
       ),
     );
